@@ -1,16 +1,12 @@
 ---
-title: "工数記録が続かないエンジニアへ。押し忘れても調整しやすい工数トラックツール「psp-copilot」を作った"
+title: "工数記録が続かないエンジニアへ。押し忘れても調整しやすい工数トラックツール「PSP Copilot」を作ってみた"
 emoji: "⏱️"
 type: "tech"
 topics: ["github", "javascript", "tool", "psp"]
-published: false
+published: true
 ---
 
-ご提示いただいた構成をベースに、長くなりすぎずサクッと読めるボリューム感でZenn記事の下書き（Markdown形式）を作成しました！
-
----
-
-# 工数記録が続かないエンジニアへ。押し忘れても調整しやすい工数トラックツール「psp-copilot」を作った
+# 工数記録が続かないエンジニアへ。押し忘れても調整しやすい工数トラックツール「PSP Copilot」を作ってみた
 
 ## はじめに
 
@@ -18,15 +14,15 @@ published: false
 
 そう思いつつも、「記録を開始するのを忘れて作業してしまった」「マルチタスクで切り替えが面倒になり挫折した」という経験はありませんか？
 
-自分自身、もともとはExcelで同じような工数管理を行っていたのですが、「もっとAIやWebの仕組みを活用して手軽にできないか」「周囲のエンジニアや後輩にも共有しやすい形にしたい」と思い、**「psp-copilot」** というツールを開発・公開しました。
+自分自身、もともとはExcelで同じような工数管理を行っていたのですが、「もっとAIやWebの仕組みを活用して手軽にできないか」「周囲のエンジニアや後輩にも共有しやすい形にしたい」と思い、**「PSP Copilot」** というツールを作成してみました。
 
-* **GitHub**: [yamagile/psp-copilot](https://github.com/yamagile/psp-copilot?utm_source=gemini)
+* **GitHub**: [yamagile/psp-copilot](https://github.com/yamagile/psp-copilot/tree/feature/japanese)
 
 ---
 
-## 「psp-copilot」とは？
+## 「PSP Copilot」とは？
 
-個人ソフトウェアプロセス（PSP: Personal Software Process）の考え方をベースに、**日々の工数計測・見積もり精度の向上**をサポートするツールです。
+PSP（Personal Software Process）の考え方をベースに、**日々の工数計測・見積もり精度の向上**をサポートするツールです。
 
 「記録すること」自体が負担にならないよう、**使う人に寄り添った直感的なUI/UX**を目指しました。
 
@@ -44,7 +40,7 @@ published: false
 
 タイマー機能付きのツールで一番挫折しやすいのが、「ボタンを押し忘れて作業を始めてしまったとき」です。「あ、15分前から作業始めてたのに…」となると、やる気が削がれて記録を諦めがちになります。
 
-`psp-copilot` は、後から計測を開始した場合でも**直感的に開始時間や調整が行える**ため、挫折せずに記録を続けられます。
+`PSP Copilot` は、後から計測を開始した場合でも**直感的に開始時間や調整が行える**ため、挫折せずに記録を続けられます。
 
 ### 2. マルチタスクでも迷わない色分けと視覚デザイン
 
@@ -56,27 +52,21 @@ published: false
 
 ## 使い方・セットアップ
 
-※実際の画面イメージ（GIFやスクリーンショットをここに掲載）
+![](/images/psp-copilot-demo.png)
 
-1. リポジトリをクローン
-```bash
-git clone https://github.com/yamagile/psp-copilot.git
-cd psp-copilot
+PSP Copilotはウェブブラウザからすぐに使うことも、ローカルにダウンロードして使うこともできます。バックエンドサーバーやインストールは不要です。
 
-```
+### オプション1. オンラインで使う（おすすめ＆簡単）※英語版のみ
+次のGitHub Pagesリンクにアクセスするだけで、すぐにブラウザで使い始められます：👉 [PSP Copilotオンラインを開く](https://yamagile.github.io/psp-copilot/psp-copilot.html)
 
+### オプション2. ローカルでダウンロード＆使用 / クラウドストレージ
+データをローカルに保存したり、複数のデバイスで同期させたい場合は：
 
-2. セットアップ & 起動
-```bash
-# インストールコマンドや起動コマンドを記載してください
-npm install
-npm run dev
+1. リポジトリ（[英語版](https://github.com/yamagile/psp-copilot) 、 [日本語版](https://github.com/yamagile/psp-copilot/tree/feature/japanese)）から `psp-copilot.html` をダウンロードします。
+2. ファイルをダブルクリックして、ブラウザ（Chrome、Edge、Safari、Firefoxなど）で開きます。
+3. デバイス間で同期する場合（任意）：ダウンロードしたファイルをクラウドストレージフォルダ（GoogleドライブやDropboxなど）に保存すれば、スマホやタブレットからも簡単に開いて使えます。
 
-```
-
-
-
-*(※詳細なセットアップ手順は [GitHub リポジトリ](https://github.com/yamagile/psp-copilot?utm_source=gemini) も併せてご確認ください)*
+*(※詳細なセットアップ手順は [GitHub リポジトリ](https://github.com/yamagile/psp-copilot/tree/feature/japanese) も併せてご確認ください)*
 
 ---
 
@@ -87,10 +77,3 @@ npm run dev
 まだまだ改善中ですので、使ってみた感想やフィードバック、GitHubでの Issue / PR や Star をいただけると非常に嬉しいです！
 
 * **GitHub**: [yamagile/psp-copilot](https://github.com/yamagile/psp-copilot?utm_source=gemini)
-
----
-
-### 下書きのポイント・確認項目
-
-* セットアップコマンドの箇所（`npm install` や `npm run dev` など）は実際の環境に合わせて書き換えてみてください。
-* 記事内にスクショや画面操作のGIFアニメを1〜2枚挟むと、Zennでの注目度が格段に上がります。
