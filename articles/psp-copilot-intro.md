@@ -6,8 +6,6 @@ topics: ["github", "javascript", "tool", "psp"]
 published: true
 ---
 
-# 工数記録が続かないエンジニアへ。押し忘れても調整しやすい工数トラックツール「PSP Copilot」を作ってみた
-
 ## はじめに
 
 「何にどれだけ時間をかけたか記録して、次回以降の見積もり精度を上げたい」
